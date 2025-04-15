@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5%;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.headline {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #64ffda;
+}
+
+.bio {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #a8b2d1;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #64ffda;
+    color: #1e1e2f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #52d1b2;
+}
+
+/* Animation Container */
+.animation-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.neovim-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #64ffda;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+}

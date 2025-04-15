@@ -1,70 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Portfolio">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">My Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about" class="section">
-        <h1>About Me</h1>
-        <p>Hi, I'm a passionate web developer. I love creating amazing websites and apps.</p>
-    </section>
-
-    <section id="projects" class="section">
-        <h1>Projects</h1>
-        <div class="project-list">
-            <div class="project">
-                <h2>Project 1</h2>
-                <p>Details about Project 1.</p>
-            </div>
-            <div class="project">
-                <h2>Project 2</h2>
-                <p>Details about Project 2.</p>
-            </div>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Abhijith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-buttons-list">
+        <li>Projects</li>
+        <li>About</li>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Blogs</li>
+      </ul>
+    </nav>
+    <div class="intro-div">
+      <h1 class="signature">Abhijith Kumble</h1> 
+      <h2 class="greetings">Hello Everyone !</h2>
+      <p class="intro">
+        I’m Abhijith, Engineer, Open source contributor, and Finance enthusiast who enjoys analyzing and solving problems. 
+      </p>
+    </div>
+    
+    <!-- Blogs Section -->
+    <div class="blogs-section">
+      <h3>Blogs</h3>
+      <div class="blog-list">
+        <div class="blog-item">
+          <h4>Blog Title 1</h4>
+          <p>This is a dummy blog post. You can fetch real blogs from your Substack account using their RSS feed or API.</p>
+          <a href="#">Read More</a>
         </div>
-    </section>
-
-    <section id="blogs" class="section">
-        <h1>Blogs</h1>
-        <div class="blog-posts">
-            <div class="blog">
-                <h2>Blog Post 1</h2>
-                <p>This is my first blog post.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="blog">
-                <h2>Blog Post 2</h2>
-                <p>This is my second blog post.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
+        <div class="blog-item">
+          <h4>Blog Title 2</h4>
+          <p>This is another dummy blog post. Replace this with actual content fetched from Substack.</p>
+          <a href="#">Read More</a>
         </div>
-    </section>
+        <div class="blog-item">
+          <h4>Blog Title 3</h4>
+          <p>This is yet another dummy blog post. Integrate Substack to display your latest blogs here.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <button class="more-button" onclick="loadMoreBlogs()">More</button>
+    </div>
 
-    <section id="contact" class="section">
-        <h1>Contact</h1>
-        <p>Email me at <a href="mailto:email@example.com">email@example.com</a></p>
-    </section>
+    <!-- Projects Section -->
+    <div class="projects-section">
+      <h3>Projects</h3>
+      <div class="project-list">
+        <div class="project-item">
+          <h4>Project Title 1</h4>
+          <p>This is a dummy project description. Replace it with details of your actual projects.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-item">
+          <h4>Project Title 2</h4>
+          <p>This is another dummy project description. Add your real projects here.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-item">
+          <h4>Project Title 3</h4>
+          <p>This is yet another dummy project description. Showcase your work here.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+      <button class="more-button" onclick="loadMoreProjects()">More</button>
+    </div>
 
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+      <h2 class="foot-sign">Abhijith Kumble</h2> 
+      <h3 class="foot-info">Engineer | Open Source Contributor | Finance Enthusiast </h3>
+      <ul class="foot-nav">
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blogs</li>
+      </ul>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <script>
+      // JavaScript functions to load more blogs and projects
+      function loadMoreBlogs() {
+        // Add functionality to load more blogs dynamically
+        console.log("Load more blogs functionality to be implemented.");
+      }
 
+      function loadMoreProjects() {
+        // Add functionality to load more projects dynamically
+        console.log("Load more projects functionality to be implemented.");
+      }
+    </script>
+  </body>
+</html>
