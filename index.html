@@ -1,100 +1,191 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Abhijith</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  
-  <body>
-    <nav class="nav-bar">
-      <ul class="nav-buttons-list">
-        <li>Projects</li>
-        <li>About</li>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Blogs</li>
-      </ul>
-    </nav>
-    <div class="intro-div">
-      <h1 class="signature">Abhijith Kumble</h1> 
-      <h2 class="greetings">Hello Everyone !</h2>
-      <p class="intro">
-        I’m Abhijith, Engineer, Open source contributor, and Finance enthusiast who enjoys analyzing and solving problems. 
-      </p>
-    </div>
-    
-    <!-- Blogs Section -->
-    <div class="blogs-section">
-      <h3>Blogs</h3>
-      <div class="blog-list">
-        <div class="blog-item">
-          <h4>Blog Title 1</h4>
-          <p>This is a dummy blog post. You can fetch real blogs from your Substack account using their RSS feed or API.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="blog-item">
-          <h4>Blog Title 2</h4>
-          <p>This is another dummy blog post. Replace this with actual content fetched from Substack.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="blog-item">
-          <h4>Blog Title 3</h4>
-          <p>This is yet another dummy blog post. Integrate Substack to display your latest blogs here.</p>
-          <a href="#">Read More</a>
-        </div>
-      </div>
-      <button class="more-button" onclick="loadMoreBlogs()">More</button>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijith D Kumble | Full Stack Developer & ML Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>&lt;ADK/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-header">
+                <a href="https://github.com/AbhijithKumble" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:abhijithdkumble@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917892422559"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Projects Section -->
-    <div class="projects-section">
-      <h3>Projects</h3>
-      <div class="project-list">
-        <div class="project-item">
-          <h4>Project Title 1</h4>
-          <p>This is a dummy project description. Replace it with details of your actual projects.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-item">
-          <h4>Project Title 2</h4>
-          <p>This is another dummy project description. Add your real projects here.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-item">
-          <h4>Project Title 3</h4>
-          <p>This is yet another dummy project description. Showcase your work here.</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
-      <button class="more-button" onclick="loadMoreProjects()">More</button>
-    </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h4>Hi, my name is</h4>
+                <h1>Abhijith D Kumble.</h1>
+                <h2>I build intelligent systems.</h2>
+                <p>I'm a Full Stack Developer and Machine Learning Engineer specializing in building web applications with React and Node.js, while exploring the frontiers of Deep Learning and Computer Vision.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button">View My Projects</a>
+                    <a href="https://github.com/AbhijithKumble" target="_blank" class="cta-button secondary">GitHub Profile</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glow"></div>
+                <img src="images/abhijith2.png" alt="Abhijith D Kumble">
+                <div class="tech-icons">
+                    <i class="fab fa-react" title="React"></i>
+                    <i class="fab fa-node-js" title="Node.js"></i>
+                    <i class="fas fa-brain" title="Machine Learning"></i>
+                    <i class="fas fa-robot" title="Computer Vision"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="projects-grid">
+                <!-- RSS Aggregator -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rss-aggregator-screenshot.jpg" alt="RSS Aggregator">
+                    </div>
+                    <div class="project-info">
+                        <h4>RSS Aggregator</h4>
+                        <p>A robust and efficient RSS aggregator built with Golang and PostgreSQL, utilizing concurrency for high performance.</p>
+                        <div class="project-tags">
+                            <span>Golang</span>
+                            <span>PostgreSQL</span>
+                            <span>Concurrency</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AbhijithKumble/rss-aggregator" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gesture Based Rover -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rover-screenshot.jpg" alt="Gesture Based Rover">
+                    </div>
+                    <div class="project-info">
+                        <h4>Gesture Based Rover</h4>
+                        <p>Hardware implementation of a gesture-controlled rover using Arduino and ASK modulation for wireless communication.</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>Hardware</span>
+                            <span>ASK Modulation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AbhijithKumble/gesture-rover" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SensorHub and SensFit -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="sensorhub-screenshot.jpg" alt="SensorHub and SensFit">
+                    </div>
+                    <div class="project-info">
+                        <h4>SensorHub & SensFit</h4>
+                        <p>Android app collecting sensor data with Django backend, planning ML integration for predictive analytics.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>Django</span>
+                            <span>ML Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AbhijithKumble/SensorHub" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brain Tumor Classification -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="brain-tumor-screenshot.jpg" alt="Brain Tumor Classification">
+                    </div>
+                    <div class="project-info">
+                        <h4>Brain Tumor Classification</h4>
+                        <p>Machine learning project for classifying brain tumors using medical imaging and deep learning techniques.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>Medical Imaging</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AbhijithKumble/brain-tumor-classification" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/AbhijithKumble?tab=repositories" target="_blank" class="cta-button">View All Projects</a>
+        </section>
+
+        <section id="experience" class="experience">
+            <h3 class="section-title">Education & Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020-2024</div>
+                    <div class="timeline-content">
+                        <h4>B.Tech in Electrical Engineering</h4>
+                        <p>National Institute of Technology Karnataka, Surathkal - CGPA: 7.94/10</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3 class="section-title">Get In Touch</h3>
+            <p>I'm currently looking for new opportunities in full-stack development and machine learning. Feel free to reach out!</p>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:abhijithdkumble@gmail.com">abhijithdkumble@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:+917892422559">+91 7892422559</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/AbhijithKumble" target="_blank">github.com/AbhijithKumble</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Location</h4>
+                    <span>Mangalore, Karnataka, India</span>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-      <h2 class="foot-sign">Abhijith Kumble</h2> 
-      <h3 class="foot-info">Engineer | Open Source Contributor | Finance Enthusiast </h3>
-      <ul class="foot-nav">
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blogs</li>
-      </ul>
+        <p>Designed & Built by Abhijith D Kumble</p>
+        <p>&copy; <span id="year"></span> All Rights Reserved</p>
     </footer>
-
-    <script>
-      // JavaScript functions to load more blogs and projects
-      function loadMoreBlogs() {
-        // Add functionality to load more blogs dynamically
-        console.log("Load more blogs functionality to be implemented.");
-      }
-
-      function loadMoreProjects() {
-        // Add functionality to load more projects dynamically
-        console.log("Load more projects functionality to be implemented.");
-      }
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
